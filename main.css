@@ -318,7 +318,7 @@ main{
 
 
 
-@media (max-width: 800px) {
+@media (max-width: 767px) {
     .section-title{
         font-size: 1rem;
     }
@@ -335,6 +335,22 @@ main{
     }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .section-title{
+        font-size: 1rem;
+    }
+    .cols-3{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .cols-4{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .product-name, .product-price, .rate{
+        max-height: 1rem; 
+        overflow: hidden;
+        font-size: 0.8rem;
+    }
+}
 
 /* Footer */ 
 
@@ -361,6 +377,7 @@ main{
 
 .download-options>div img{
     width: 180px;
+    margin: 6px;
 }
 
 .logo-footer{
